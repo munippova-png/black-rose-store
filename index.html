@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BLACK ROSE STORE</title>
+
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+#intro{
+
+position:fixed;
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:#000;
+
+z-index:9999;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+animation:keluar 3s forwards;
+
+}
+
+
+.intro-logo{
+
+font-size:45px;
+
+font-weight:900;
+
+color:white;
+
+text-align:center;
+
+text-shadow:
+0 0 10px #a000ff,
+0 0 30px #a000ff;
+
+animation:muncul 2s;
+
+}
+
+
+.intro-logo span{
+
+display:block;
+
+font-size:22px;
+
+letter-spacing:10px;
+
+color:#b000ff;
+
+}
+
+.intro-logo{
+
+font-size:45px;
+font-weight:900;
+color:white;
+text-align:center;
+
+text-shadow:
+0 0 10px #a000ff,
+0 0 30px #a000ff;
+
+animation:muncul 2s;
+
+}
+
+
+.intro-logo span{
+
+display:block;
+font-size:22px;
+letter-spacing:10px;
+color:#b000ff;
+
+}
+
+
+@keyframes muncul{
+
+from{
+opacity:0;
+transform:scale(.5);
+}
+
+to{
+opacity:1;
+transform:scale(1);
+}
+
+}
+
+
+@keyframes keluar{
+
+0%,80%{
+opacity:1;
+}
+
+100%{
+opacity:0;
+visibility:hidden;
+}
+
+}
+  
+
+
+body{
+
+background:#3e0057;
+color:white;
+padding-bottom:80px;
+
+}
+
+
+/* HEADER */
+
+.header{
+
+height:230px;
+
+background:
+linear-gradient(
+rgba(0,0,0,.15),
+rgba(0,0,0,.35)
+),
+url("https://i.ibb.co.com/nNCBFXjF/file-0000000077e482119d1d3c9946b1841a.png");
+
+background-size:cover;
+
+background-position:center;
+
+display:flex;
+
+align-items:center;
+
+padding:25px;
+
+border-bottom:1px solid #8b00ff;
+
+}
+
+
+.logo{
+
+font-size:35px;
+
+font-weight:900;
+
+letter-spacing:2px;
+
+color:white;
+
+text-shadow:
+0 0 10px #9d00ff,
+0 0 25px #9d00ff;
+
+}
+
+
+.logo span{
+
+display:block;
+
+font-size:20px;
+
+letter-spacing:8px;
+
+color:#b300ff;
+
+}
+
+
+
+/* MENU */
+
+.menu{
+
+display:flex;
+
+gap:10px;
+
+overflow-x:auto;
+
+padding:20px;
+
+}
+
+
+.menu button{
+
+background:#111;
+
+color:white;
+
+border:1px solid #8b00ff;
+
+padding:12px 18px;
+
+border-radius:30px;
+
+white-space:nowrap;
+
+}
+
+
+
+/* PRODUK */
+
+.container{
+
+padding:20px;
+
+}
+
+
+.title{
+
+font-size:25px;
+
+font-weight:bold;
+
+margin-bottom:20px;
+
+}
+
+
+
+.products{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:15px;
+
+}
+
+
+
+.card{
+
+background:#101010;
+
+border-radius:20px;
+
+padding:15px;
+
+border:1px solid #242424;
+
+box-shadow:
+0 0 20px rgba(150,0,255,.15);
+
+}
+
+
+
+.card img{
+
+width:100%;
+
+height:120px;
+
+object-fit:contain;
+
+border-radius:15px;
+
+}
+
+
+
+.card h3{
+
+margin-top:15px;
+
+font-size:17px;
+
+}
+
+
+
+.price{
+
+color:#c05cff;
+
+font-weight:bold;
+
+margin:10px 0;
+
+}
+
+
+.buy{
+
+width:100%;
+
+padding:12px;
+
+border:0;
+
+border-radius:15px;
+
+background:#9b00ff;
+
+color:white;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.2s;
+
+box-shadow:
+0 0 10px rgba(155,0,255,.5);
+
+}
+
+
+.buy:hover{
+
+transform:translateY(-3px);
+
+box-shadow:
+0 0 20px #9b00ff;
+
+}
+
+
+.buy:active{
+
+transform:scale(.92);
+
+background:#c04cff;
+
+}
+
+
+
+/* NAV BAWAH */
+
+
+.bottom{
+
+position:fixed;
+
+bottom:0;
+
+left:0;
+
+width:100%;
+
+background:#090909;
+
+display:flex;
+
+justify-content:space-around;
+
+padding:15px;
+
+border-top:1px solid #333;
+
+}
+
+
+
+.bottom div{
+
+color:#aaa;
+
+font-size:13px;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+<div id="intro">
+
+<div class="intro-logo">
+BLACK ROSE
+<span>STORE</span>
+</div>
+
+</div>
+
+<div class="header">
+
+<div></div>
+
+</div>
+
+
+<div class="menu">
+
+<button>Drip Apk Mod</button>
+<button>Drip Root</button>
+<button>Drip Wire</button>
+<button>Drip Proxy</button>
+<button>HG Apk Mod</button>
+<button>Pato Team</button>
+
+</div>
+
+
+<div class="container">
+
+<div class="title">
+Produk Terbaru
+</div>
+
+
+
+<div class="products">
+
+
+<div class="card">
+
+<img src="https://i.ibb.co.com/wFmQySJv/drip-apk.jpg">
+
+<h3>Drip Apk Mod</h3>
+
+<p>Android Premium</p>
+
+<div class="price">
+Mulai Rp10.000
+</div>
+
+<button class="buy" onclick="beli('Drip Apk Mod')">
+BELI SEKARANG
+</button>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://i.ibb.co.com/nsy22FCc/drip-root.jpg">
+
+<h3>Drip Root</h3>
+
+<p>Root Version</p>
+
+<div class="price">
+Mulai Rp10.000
+</div>
+
+<button class="buy" onclick="beli('Drip Root')">
+BELI SEKARANG
+</button>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://i.ibb.co.com/TxmR5jwm/drip-wire.jpg">
+
+<h3>Drip Wire</h3>
+
+<p>Premium Wire</p>
+
+<div class="price">
+Mulai Rp7.000
+</div>
+
+<button class="buy" onclick="beli('Drip Wire')">
+BELI SEKARANG
+</button>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://i.ibb.co.com/Pvrbm60C/drip-proxy.jpg">
+
+<h3>Drip Proxy</h3>
+
+<p>Proxy Premium</p>
+
+<div class="price">
+Mulai Rp10.000
+</div>
+
+<button class="buy" onclick="beli('Drip Proxy')">
+BELI SEKARANG
+</button>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://i.ibb.co.com/4n7YPHzn/hg-cheat.jpg">
+
+<h3>HG Apk Mod</h3>
+
+<p>Safe Normal Version</p>
+
+<div class="price">
+Mulai Rp15.000
+</div>
+
+<button class="buy" onclick="beli('HG Apk Mod')">
+BELI SEKARANG
+</button>
+
+</div>
+
+
+
+<div class="card">
+
+<img src="https://i.ibb.co.com/4w6x9dsH/pato.jpg">
+
+<h3>Pato Team</h3>
+
+<p>Premium Team</p>
+
+<div class="price">
+Mulai Rp34.500
+</div>
+
+<button class="buy" onclick="beli('Pato Team')">
+BELI SEKARANG
+</button>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="bottom">
+
+<div>🏠<br>Home</div>
+
+<div>🛒<br>Produk</div>
+
+<div>📦<br>Order</div>
+
+<div>👤<br>Profile</div>
+
+</div>
+
+  <!-- POPUP DURASI -->
+
+<div id="popup" class="popup">
+
+<div class="popup-box">
+
+<button class="close" onclick="tutup()">
+×
+</button>
+
+<h2 id="judulProduk">
+PILIH DURASI
+</h2>
+
+<div id="pilihan"></div>
+
+
+</div>
+
+</div>
+
+
+
+<style>
+
+.popup{
+
+display:none;
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,.8);
+
+z-index:999;
+
+align-items:center;
+
+justify-content:center;
+
+}
+
+
+
+.popup-box{
+
+width:90%;
+
+max-width:450px;
+
+background:#160024;
+
+border-radius:25px;
+
+padding:25px;
+
+border:1px solid #8b00ff;
+
+box-shadow:
+0 0 30px #8b00ff;
+
+position:relative;
+
+}
+
+
+
+.popup-box h2{
+
+color:#fff;
+
+margin-bottom:20px;
+
+}
+
+
+
+.close{
+
+position:absolute;
+
+right:20px;
+
+top:15px;
+
+background:none;
+
+border:none;
+
+color:white;
+
+font-size:30px;
+
+}
+
+
+
+.paket{
+
+background:#260040;
+
+padding:18px;
+
+border-radius:18px;
+
+margin-bottom:12px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+color:white;
+
+border:1px solid #520080;
+
+}
+
+
+
+.paket:hover{
+
+background:#8b00ff;
+
+}
+
+
+
+.harga{
+
+color:#d45cff;
+
+font-weight:bold;
+
+}
+
+
+
+</style>
+
+
+
+<script>
+
+
+let nomorWA="6287813135623";
+
+
+let dataProduk={
+
+"Drip Apk Mod":[
+
+["1 Hari","103","10000"],
+
+["3 Hari","20","25000"],
+
+["7 Hari","38","45000"],
+
+["15 Hari","4","70000"],
+
+["30 Hari","5","100000"]
+
+],
+
+
+"Drip Root":[
+
+["1 Hari","21","10000"],
+
+["7 Hari","13","45000"],
+
+["30 Hari","2","80000"]
+
+],
+
+
+"Drip Wire":[
+
+["6 Jam","73","7000"],
+
+["12 Jam","22","13000"],
+
+["1 Hari","17","18000"],
+
+["7 Hari","13","65000"],
+
+["30 Hari","6","150000"]
+
+],
+
+
+"Drip Proxy":[
+
+["1 Hari","54","10000"],
+
+["3 Hari","67","25000"],
+
+["7 Hari","17","45000"],
+
+["30 Hari","11","100000"]
+
+],
+
+
+"HG Apk Mod":[
+
+["1 Hari","11","15000"],
+
+["3 Hari","9","25000"]
+
+],
+
+
+"Pato Team":[
+
+["3 Hari Oren","2","34500"],
+
+["3 Hari Regedit","5","35000"],
+
+["7 Hari Biru","5","66000"]
+
+]
+
+};
+
+
+
+function beli(nama){
+
+
+document.getElementById("popup").style.display="flex";
+
+
+document.getElementById("judulProduk").innerHTML=
+"🕒 PILIH DURASI<br><br>"+nama;
+
+
+let html="";
+
+
+dataProduk[nama].forEach(item=>{
+
+
+html+=`
+
+<div class="paket"
+onclick="wa('${nama}','${item[0]}','${item[2]}')">
+
+
+<div>
+
+<b>${item[0]}</b><br>
+
+<small>
+Masa aktif ${item[0]} 
+<br>
+Stok: ${item[1]}
+</small>
+
+</div>
+
+
+<div class="harga">
+Rp ${Number(item[2]).toLocaleString()}
+</div>
+
+
+</div>
+
+`;
+
+});
+
+
+document.getElementById("pilihan").innerHTML=html;
+
+
+}
+
+
+
+function tutup(){
+
+document.getElementById("popup").style.display="none";
+
+}
+
+
+
+function wa(produk,durasi,harga){
+
+
+let pesan=
+
+`Kak saya mau beli
+
+Produk : ${produk}
+
+Durasi : ${durasi}
+
+Harga : Rp ${Number(harga).toLocaleString()}`;
+
+
+window.open(
+
+"https://wa.me/"+nomorWA+"?text="+encodeURIComponent(pesan)
+
+);
+
+
+  }
+
+
+</script>
+
+</body>
+
+</html>
